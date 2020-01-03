@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-;(function() {
+;(function () {
   // Set local elements
   const doc = document.documentElement
   const button = document.querySelector('.Hero .Button')
@@ -31,14 +31,19 @@
     }
 
     sr.reveal('.Hero', slide)
-    sr.reveal('.Hero-image', { ...slide, delay: 500 })
+    sr.reveal('.Hero-image', { ...slide, delay: 500, scale: 1.1 })
     sr.reveal('.Hero-message', { ...slide, delay: 600 })
-    sr.reveal('.Hero-ticket', { ...slide, delay: 1000, duration: 2000 })
+    sr.reveal('.Hero-ticket', {
+      ...slide,
+      delay: 1000,
+      duration: 2000
+    })
     sr.reveal('.Video Label', slide)
     sr.reveal('.Video iframe', slide)
-    sr.reveal('.Footer', slide)
+    sr.reveal('.Footer', { ...slide, origin: 'bottom' })
+    sr.reveal('.Socialbar', { ...slide, origin: 'bottom', delay: 2000 })
 
-    const nodeList = document.querySelectorAll('.What .item')
-    sr.reveal(nodeList, slide)
+    const gridNodeList = document.querySelectorAll('.flex .item')
+    sr.reveal(gridNodeList, { ...slide, origin: 'bottom' })
   }
 })()

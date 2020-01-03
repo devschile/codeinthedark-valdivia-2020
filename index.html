@@ -50,24 +50,38 @@
 		</noscript>
 
 		<div class="container mx-auto">
-			<div class="Hero py-24">
+			<div class="Socialbar">
+				<img src="/dist/images/ico-heart.svg" alt="heart" />
+				<div class="Socialbar-line"></div>
+				<a href="#">
+					<img src="/dist/images/ico-instagram.svg" alt="instagram" />
+				</a>
+				<a href="#">
+					<img src="/dist/images/ico-twitter.svg" alt="instagram" />
+				</a>
+			</div>
+
+			<div class="Hero py-24 mt-12">
 				<div class="Hero-bg"></div>
-				<div class="Hero-body relative">
-					<div class="Hero-image flex justify-center">
+				<div class="Hero-body text-center">
+					<div class="Hero-image">
 						<img
+							class="inline-block"
 							src="/dist/images/lgo-citdv-logo.png"
 							alt="codeinthedark-logo"
 						/>
+						<div class="Label mt-4">2020</div>
 					</div>
-					<div class="Hero-message flex justify-center p-10">
-						<h3 class="w-1/2 text-center opacity-75">
+					<div class="Hero-message mt-4">
+						<h3 class="opacity-75">
 							La fiesta para developers más intensa del año. <br />
 							Música, comida, tragos y desafíos de código.
 						</h3>
 					</div>
-					<div class="Hero-ticket flex justify-center">
-						<button class="Button">
-							Comprar ticket
+					<div class="Hero-ticket mt-6">
+						<button class="Button Button--buy cursor-not-allowed opacity-75">
+							<span>Comprar ticket</span>
+							<span>Proximamente</span>
 						</button>
 					</div>
 				</div>
@@ -78,7 +92,7 @@
 					<iframe
 						src="https://player.vimeo.com/video/63318482?title=0&byline=0&portrait=0"
 						width="800"
-						height="540"
+						height="500"
 						frameborder="0"
 						allow="autoplay; fullscreen"
 						allowfullscreen
@@ -165,7 +179,7 @@
 						<div class="item w-1/4 px-4">
 							<img
 								class="w-20 inline-block"
-								src="/dist/images/ico-trophy.svg"
+								src="/dist/images/ico-winner.svg"
 								alt="ico"
 							/>
 							Un ganador
@@ -190,34 +204,18 @@
 
 			<div class="Support py-10">
 				<div class="Label text-center">Auspicia</div>
-				<div class="flex text-center my-10 -m-4 opacity-25">
-					<div class="item w-1/4 px-4">
-						<img
-							class="w-20 inline-block"
-							src="/dist/images/ico-eye.svg"
-							alt="ico"
-						/>
-					</div>
-					<div class="item w-1/4 px-4">
-						<img
-							class="w-20 inline-block"
-							src="/dist/images/ico-eye.svg"
-							alt="ico"
-						/>
-					</div>
-					<div class="item w-1/4 px-4">
-						<img
-							class="w-20 inline-block"
-							src="/dist/images/ico-eye.svg"
-							alt="ico"
-						/>
-					</div>
-					<div class="item w-1/4 px-4">
-						<img
-							class="w-20 inline-block"
-							src="/dist/images/ico-eye.svg"
-							alt="ico"
-						/>
+				<div class="flex text-center justify-center my-10">
+					<div class="item">
+						<a
+							target="_blank"
+							href="https://www.facebook.com/groups/DevCSantiago"
+						>
+							<img
+								class="max-w-lg"
+								src="/dist/images/lgo-facebook-dev-circle.png"
+								alt="facebook"
+							/>
+						</a>
 					</div>
 				</div>
 
@@ -254,67 +252,68 @@
 				</div>
 
 				<div class="Label text-center">Apoya</div>
-				<div class="flex text-center my-10 -m-4 opacity-25">
-					<div class="item w-1/2 px-4">
-						<img
-							class="w-20 inline-block"
-							src="/dist/images/ico-eye.svg"
-							alt="ico"
-						/>
-					</div>
-					<div class="item w-1/2 px-4">
-						<img
-							class="w-20 inline-block"
-							src="/dist/images/ico-eye.svg"
-							alt="ico"
-						/>
+				<div class="flex text-center justify-center my-10">
+					<div class="item">
+						<a target="_blank" href="https://nubecowork.biz">
+							<img
+								class="w-20"
+								src="/dist/images/lgo-nube.png"
+								alt="facebook"
+							/>
+						</a>
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<div class="Footer bg-gray-900 p-12 mt-20 text-gray-500 text-sm">
-				<div class="flex">
-					<div class="w-1/2 px-4">
-						<div class="Label">Code in the Dark . Valdivia</div>
+		<div class="Footer bg-gray-900 p-12 mt-20 text-gray-500 text-sm">
+			<div class="flex">
+				<div class="w-1/2 px-4">
+					<div class="Label">Code in the Dark . Valdivia</div>
 
-						<div class="mt-4">
-							¡Estás invitado! 👋 <br />
-							Participa, compite y disfruta un buen rato. No olvides esta fecha
-							y lugar para la fiesta Code in the Dark Valdivia 2020
+					<div class="mt-4">
+						¡Estás invitado! 👋 <br />
+						Participa, compite y disfruta un buen rato. No olvides esta fecha y
+						lugar para la fiesta Code in the Dark Valdivia 2020
 
-							<div class="mt-2">
-								📍 Lugar: Nube Cowork, Valdivia <br />
-								🗓 Fecha: 20 de abril de 2020
-							</div>
+						<div class="mt-2">
+							📍 Lugar: Nube Cowork, Valdivia <br />
+							🗓 Fecha: Por confirmar
 						</div>
 					</div>
+				</div>
 
-					<div class="w-1/2 text-center px-4">
-						<div class="Label">Organiza</div>
+				<div class="w-1/2 text-center px-4">
+					<div class="Label">Organiza</div>
 
-						<div class="mt-4">
+					<div class="mt-4">
+						<a target="_blank" href="https://valdivia.beerjs.cl">
 							<img
 								src="/dist/images/lgo-beerjs-valdivia.png"
 								alt="beerjs-valdivia"
 								class="w-20 inline-block"
 							/>
-							<p class="text-xs mt-2">BeerJS Valdivia</p>
-						</div>
+							<p class="text-xs mt-2 px-20">
+								BeerJS Valdivia <br />
+								Una comunidad de desarrolladores abierta y gratuita que fomenta
+								espacios sociales alrededor del software.
+							</p>
+						</a>
 					</div>
-					<div class="w-1/2 px-4">
-						<div class="Label">Código de conducta</div>
-						<div class="mt-4">
-							Como organización nos comprometemos a proporcionar un ambiente
-							seguro y amigable. Un entorno para que todos puedan aprender,
-							conocer y disfrutar el evento. Todos asistentes, competidores y
-							patrocinadores deben seguir nuestro código
-							<a
-								target="_blank"
-								class="text-green-400"
-								href="https://github.com/devschile/codeinthedark2018/blob/master/codeofconduct.md"
-								>código de conducta</a
-							>.
-						</div>
+				</div>
+				<div class="w-1/2 px-4">
+					<div class="Label">Código de conducta</div>
+					<div class="mt-4">
+						Como organización nos comprometemos a proporcionar un ambiente
+						seguro y amigable. Un entorno para que todos puedan aprender,
+						conocer y disfrutar el evento. Todos asistentes, competidores y
+						patrocinadores deben seguir nuestro código
+						<a
+							target="_blank"
+							class="text-green-400"
+							href="https://github.com/devschile/codeinthedark2018/blob/master/codeofconduct.md"
+							>código de conducta</a
+						>.
 					</div>
 				</div>
 			</div>
