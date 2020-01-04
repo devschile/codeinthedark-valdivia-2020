@@ -10,7 +10,6 @@
 			content="La fiesta para developers más intensa del año en Valdivia"
 		/>
 		<link rel="stylesheet" href="dist/css/index.css" />
-		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 		<link
 			href="https://fonts.googleapis.com/css?family=Roboto+Mono"
 			rel="stylesheet"
@@ -49,7 +48,9 @@
 			</strong>
 		</noscript>
 
-		<div class="container mx-auto">
+		<div class="Superbg"></div>
+
+		<div class="container mx-auto relative">
 			<div class="Socialbar">
 				<img src="/dist/images/ico-heart.svg" alt="heart" />
 				<div class="Socialbar-line"></div>
@@ -57,7 +58,10 @@
 					<img src="/dist/images/ico-instagram.svg" alt="instagram" />
 				</a>
 				<a href="#">
-					<img src="/dist/images/ico-twitter.svg" alt="instagram" />
+					<img src="/dist/images/ico-twitter.svg" alt="twitter" />
+				</a>
+				<a href="#">
+					<img src="/dist/images/ico-spotify.svg" alt="spotify" />
 				</a>
 			</div>
 
@@ -89,17 +93,17 @@
 
 			<div class="Video py-20">
 				<div class="flex justify-center">
-					<iframe
-						src="https://player.vimeo.com/video/63318482?title=0&byline=0&portrait=0"
-						width="800"
-						height="500"
-						frameborder="0"
-						allow="autoplay; fullscreen"
-						allowfullscreen
-						title="video"
-					></iframe>
+					<div class="Video-player relative cursor-pointer">
+						<div class="Video-backdrop"></div>
+						<img
+							class="w-20 absolute-center pointer-events-none"
+							src="/dist/images/ico-play.svg"
+							alt="video"
+						/>
+						<div class="absolute top-0 left-0" id="video"></div>
+					</div>
 				</div>
-				<h4 class="Label text-center">Edicion original referencial</h4>
+				<h4 class="Label text-center mt-6">Edicion original referencial</h4>
 			</div>
 
 			<div class="What bg-gray-900 p-12 mb-10">
@@ -117,8 +121,8 @@
 						concursante compite para implementar el diseño de una pieza web solo
 						con una captura de pantalla. En esta no se permiten vistas previas
 						de los resultados durante la implementación, y no se pueden utilizar
-						herramientas de medición. Después de 15 minutos, los resultados son
-						vistos por todos a la vez, y el público decide el ganador.
+						herramientas de medición. Después de 15 minutos los resultados son
+						vistos por todos a la vez.
 					</div>
 
 					<div class="flex my-10 -m-4">
@@ -328,6 +332,8 @@
 				el.add('init-1')
 			}, 500)
 		</script>
+		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+		<script src="https://player.vimeo.com/api/player.js"></script>
 		<script src="dist/js/main.min.js"></script>
 	</body>
 </html>
