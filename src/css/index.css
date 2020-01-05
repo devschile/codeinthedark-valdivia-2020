@@ -26,11 +26,6 @@ h3 {
 	position: relative;
 }
 
-.Hero img {
-	max-width: 400px;
-	width: 100%;
-}
-
 .Hero-bg {
 	background-image: url(/dist/images/bg-gif.gif);
 	background-size: cover;
@@ -41,6 +36,24 @@ h3 {
 	left: 0;
 	bottom: 0;
 	animation: 12s 3s linear infinite flash-bg-anim;
+}
+
+.Hero-bg-noise {
+	background-image: url(https://media2.giphy.com/media/FSqYDfsdaiG9W/giphy.gif?cid=790b76115d6c365c124d4e1292059f809ada9e05bf43e442&rid=giphy.gif);
+	background-repeat: repeat;
+	background-size: 220px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	opacity: 0.1;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.Hero-bg-noise {
+		opacity: 0.06;
+	}
 }
 
 @keyframes flash-anim {
@@ -86,10 +99,25 @@ h3 {
 	letter-spacing: 2px;
 	border: 2px solid white;
 	display: inline-block;
-	padding: 1em 2em;
+	padding: 0.8em 1em;
 	cursor: pointer;
 	color: #fff;
 	font-weight: bold;
+	font-size: 0.8rem;
+}
+
+@media (min-width: 640px) {
+	.Button {
+		padding: 0.9em 1.6em;
+		font-size: 0.9rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.Button {
+		/* padding: 1em 2em; */
+		font-size: 1rem;
+	}
 }
 
 .Button:hover {
@@ -145,23 +173,28 @@ h3 {
 	opacity: 0.9;
 }
 
-.Socialbar img {
+.Socialbar a:hover svg {
+	fill: #07ce8a;
+}
+
+.Socialbar svg {
 	width: 2rem;
+	fill: #fff;
 }
 
 .Socialbar-line {
 	height: 100px;
 	width: 2px;
-	background-color: #07ce8a;
+	background-color: #fff;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	display: inline-block;
+	margin-right: 8px;
 }
 
 .Superbg {
-	background-image: url(/dist/images/bg-gif.gif);
-	background-size: cover;
-	background-position: 50%;
+	background-image: url(https://media1.giphy.com/media/nizkfSsoo0Rb2/giphy.gif?cid=790b7611f4164664f9a0ec6231507df6a213f6311972bd44&rid=giphy.gif);
+	background-size: 400px;
 	width: 100%;
 	height: 100vh;
 	position: fixed;
@@ -170,7 +203,7 @@ h3 {
 	opacity: 0;
 	z-index: -1;
 	transition: opacity 1s ease;
-	animation: 10s 2s linear infinite flash-bg-anim;
+	animation: 10s linear infinite flash-bg-anim;
 }
 
 @keyframes flash-bg-anim {
@@ -195,11 +228,24 @@ h3 {
 }
 
 .Video-backdrop {
-	width: 900px;
-	height: 506px;
+	width: 100vw;
+	height: 200px;
 	background-image: url(/dist/images/img-backdrop-video.jpg);
 	background-size: cover;
 	background-position: 50%;
+}
+
+@media (min-width: 640px) {
+	.Video-backdrop {
+		height: 300px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.Video-backdrop {
+		width: 900px;
+		height: 506px;
+	}
 }
 
 .absolute-center {
