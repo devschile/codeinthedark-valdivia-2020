@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "run-p serve watch:*",
-    "prestart": "run-s build:images:dev build:css build:js",
+    "prestart": "run-s clean build:images:dev build:css build:js",
     "clean": "rimraf dist/{css/*,js/*,images/*}",
     "postcss": "postcss src/css/index.css -o dist/css/index.css",
     "format": "prettier-standard 'src/js/**/*.js'",
