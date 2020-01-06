@@ -29,7 +29,7 @@
 			}
 		</style>
 	</head>
-	<body class="has-animations">
+	<body>
 		<noscript>
 			<style>
 				body {
@@ -48,10 +48,14 @@
 			</strong>
 		</noscript>
 
+		<div class="Loading w-screen h-screen">
+			<div class="absolute-center">Cargando...</div>
+		</div>
+
 		<div class="Superbg"></div>
 
 		<div class="container p-5 md:p-8 mx-auto relative">
-			<div class="Socialbar hidden lg:block">
+			<div class="Socialbar invisible hidden lg:block">
 				<svg width="24" height="24">
 					<path
 						d="M17.867 3.493l4.133 3.444v5.127l-10 8.333-10-8.334v-5.126l4.133-3.444 5.867 3.911 5.867-3.911zm.133-2.493l-6 4-6-4-6 5v7l12 10 12-10v-7l-6-5z"
@@ -62,30 +66,23 @@
 				<a href="#">
 					<svg width="24" height="24">
 						<path
-							d="M14.667 12c0 1.473-1.194 2.667-2.667 2.667-1.473 0-2.667-1.193-2.667-2.667 0-1.473 1.194-2.667 2.667-2.667 1.473 0 2.667 1.194 2.667 2.667zm3.846-3.232c.038.843.046 1.096.046 3.232s-.008 2.389-.046 3.233c-.1 2.15-1.109 3.181-3.279 3.279-.844.038-1.097.047-3.234.047-2.136 0-2.39-.008-3.232-.046-2.174-.099-3.181-1.132-3.279-3.279-.039-.845-.048-1.098-.048-3.234s.009-2.389.047-3.232c.099-2.152 1.109-3.181 3.279-3.279.844-.039 1.097-.047 3.233-.047s2.39.008 3.233.046c2.168.099 3.18 1.128 3.28 3.28zm-2.405 3.232c0-2.269-1.84-4.108-4.108-4.108-2.269 0-4.108 1.839-4.108 4.108 0 2.269 1.84 4.108 4.108 4.108 2.269 0 4.108-1.839 4.108-4.108zm1.122-4.27c0-.53-.43-.96-.96-.96s-.96.43-.96.96.43.96.96.96c.531 0 .96-.43.96-.96zm6.77-7.73v24h-24v-24h24zm-4 12c0-2.172-.009-2.445-.048-3.298-.131-2.902-1.745-4.52-4.653-4.653-.854-.04-1.126-.049-3.299-.049s-2.444.009-3.298.048c-2.906.133-4.52 1.745-4.654 4.653-.039.854-.048 1.127-.048 3.299 0 2.173.009 2.445.048 3.298.134 2.906 1.746 4.521 4.654 4.654.854.039 1.125.048 3.298.048s2.445-.009 3.299-.048c2.902-.133 4.522-1.745 4.653-4.654.039-.853.048-1.125.048-3.298z"
+							d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
 						/>
 					</svg>
 				</a>
 				<a href="#">
 					<svg width="24" height="24">
 						<path
-							d="M0 0v24h24v-24h-24zm18.862 9.237c.208 4.617-3.235 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.079-4.03 3.198-4.03.944 0 1.797.398 2.396 1.037.748-.147 1.451-.42 2.085-.796-.245.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.44.656-.997 1.234-1.638 1.697z"
-						/>
-					</svg>
-				</a>
-				<a href="#">
-					<svg width="24" height="24" fill-rule="evenodd" clip-rule="evenodd">
-						<path
-							d="M24 0v24h-24v-24h24zm-12 4c-4.418 0-8 3.582-8 8 0 4.419 3.582 8 8 8s8-3.581 8-8c0-4.418-3.582-8-8-8zm3.669 11.539c-.144.236-.451.31-.686.166-1.878-1.148-4.243-1.408-7.028-.772-.268.062-.535-.106-.597-.375-.061-.268.106-.535.375-.596 3.048-.697 5.662-.397 7.771.891.235.144.309.451.165.686zm.979-2.178c-.181.293-.565.385-.858.205-2.15-1.322-5.428-1.704-7.972-.932-.33.099-.678-.087-.778-.416-.1-.33.086-.677.416-.778 2.905-.881 6.517-.454 8.987 1.063.293.181.385.565.205.858zm.084-2.269c-2.578-1.531-6.832-1.672-9.294-.925-.395.12-.813-.103-.933-.498-.12-.396.103-.814.499-.934 2.826-.858 7.523-.692 10.492 1.07.356.211.472.671.262 1.026-.211.355-.671.472-1.026.261z"
+							d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
 						/>
 					</svg>
 				</a>
 			</div>
 
-			<div class="Hero lg:py-10 lg:mt-2">
+			<div class="Hero lg:py-10 lg:mt-2 invisible">
 				<div class="Hero-bg"></div>
-				<div class="Hero-bg-noise"></div>
-				<div class="Hero-body text-center py-10 px-8">
+				<div class="Bg-noise"></div>
+				<div class="Hero-body text-center py-10 px-8 relative">
 					<div class="Hero-image">
 						<img
 							class="inline-block w-3/4 md:w-1/2 lg:w-2/6"
@@ -95,12 +92,14 @@
 						<div class="Label mt-4">2020</div>
 					</div>
 					<div class="Hero-message mt-4">
+						<h3>
+							La fiesta para developers más intensa del año.
+						</h3>
 						<h3 class="opacity-75 text-sm lg:text-base">
-							La fiesta para developers más intensa del año. <br />
 							Música, comida, tragos y desafíos de código.
 						</h3>
 					</div>
-					<div class="Hero-ticket mt-6">
+					<div class="Hero-ticket mt-6 z-10 relative">
 						<button class="Button Button--buy cursor-not-allowed opacity-75">
 							<span>Comprar ticket</span>
 							<span>Proximamente</span>
@@ -109,29 +108,31 @@
 				</div>
 			</div>
 
-			<div class="Video py-20">
-				<div class="flex justify-center">
-					<div class="Video-player relative cursor-pointer">
-						<div class="Video-backdrop"></div>
-						<img
-							class="w-20 absolute-center pointer-events-none"
-							src="/dist/images/ico-play.svg"
-							alt="video"
-						/>
-						<div class="absolute top-0 left-0" id="video"></div>
-					</div>
+			<div class="Video py-10 lg:py-20">
+				<div class="Video-player relative flex justify-center">
+					<img
+						class="Video-backdrop"
+						src="/dist/images/img-backdrop-video.jpg"
+						alt="backdrop"
+					/>
+					<img
+						class="w-20 absolute-center pointer-events-none"
+						src="/dist/images/ico-play.svg"
+						alt="video"
+					/>
+					<div class="Video-inner" id="video"></div>
 				</div>
 				<h4 class="Label text-center mt-6">Edicion original referencial</h4>
 			</div>
 
 			<div class="What bg-gray-900 p-8 lg:p-12 mb-10">
-				<div class="Hero-bg-noise"></div>
+				<div class="Bg-noise"></div>
 				<div class="What-bg"></div>
 				<div class="What-body">
 					<div>
 						<h4 class="Label mb-2">Sobre el evento</h4>
-						<h2>Code in the Dark Valdivia</h2>
-						<h3>Nube Cowork . Abril 2020</h3>
+						<h2 class="LabelSpecial">Code in the Dark Valdivia</h2>
+						<h3>2020</h3>
 					</div>
 
 					<div class="mt-4 text-gray-500">
@@ -211,9 +212,9 @@
 						</div>
 					</div>
 
-					<div class="mt-4">
-						<h3 class="text-center">Así funciona</h3>
-						<p class="mt-4 text-gray-500">
+					<div class="mt-4 text-center">
+						<h3 class="LabelSpecial">Así funciona</h3>
+						<p class="mt-4 text-gray-500 text-left">
 							Cada participante recibe una captura de pantalla. Construyen el
 							diseño de la página usando sólo HTML/CSS puro. Se proporcionan
 							todos los activos adicionales que puedan necesitar. Sin iframes,
@@ -244,7 +245,7 @@
 					</div>
 				</div>
 
-				<div class="Label text-center">Patrocina</div>
+				<!-- <div class="Label text-center">Patrocina</div>
 				<div class="flex text-center my-10 -m-4 opacity-25">
 					<div class="item w-1/2 px-4">
 						<img
@@ -260,75 +261,125 @@
 							alt="ico"
 						/>
 					</div>
-				</div>
+				</div> -->
 
 				<div class="Label text-center">Apoya</div>
 				<div class="flex text-center justify-center my-10">
-					<div class="item">
+					<div class="item mx-4">
 						<a target="_blank" href="https://nubecowork.biz">
-							<img class="w-20" src="/dist/images/lgo-nube.png" alt="nube" />
+							<img class="w-16" src="/dist/images/lgo-nube.png" alt="nube" />
+						</a>
+					</div>
+
+					<div class="item mx-4">
+						<a target="_blank" href="http://devschile.cl">
+							<img
+								class="w-20"
+								src="/dist/images/lgo-devschile.svg"
+								alt="devschile"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<div class="p-10 text-gray-500 text-sm text-center mt-4">
+					<div class="Label">Buscamos apoyo</div>
+					<div class="mt-2">
+						¿Quieres apoyarnos auspiciando o patrocinando este evento?
+					</div>
+					<div class="text-green-400 mt-1">
+						<a href="mailto:raulghm@gmail.com">
+							<img
+								class="inline-block w-4"
+								src="/dist/images/ico-mail.svg"
+								alt="mail"
+							/>
+							hablemos.
 						</a>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div
-			class="Footer bg-gray-900 py-10 px-6 lg:p-12 md:mt-20 text-gray-500 text-sm"
-		>
-			<div class="flex flex-wrap">
-				<div class="w-full lg:w-1/3 px-4">
-					<div class="Label">Code in the Dark . Valdivia</div>
+			<div
+				class="Footer relative bg-gray-900 py-10 px-6 lg:p-12 md:mt-20 text-gray-500 text-sm"
+			>
+				<div class="Bg-noise"></div>
+				<div class="flex flex-wrap">
+					<div class="w-full lg:w-1/3 px-4">
+						<div class="Label">Code in the Dark . Valdivia</div>
 
-					<div class="mt-4">
-						¡Estás invitado! 👋 <br />
-						Participa, compite y disfruta un buen rato. No olvides esta fecha y
-						lugar para la fiesta Code in the Dark Valdivia 2020
+						<div class="mt-4">
+							¡Estás invitado! 👋 <br />
+							Participa, compite y disfruta un buen rato. No olvides esta fecha
+							y lugar para la fiesta Code in the Dark Valdivia 2020
 
-						<div class="mt-2">
-							📍 Lugar: Nube Cowork, Valdivia <br />
-							🗓 Fecha: Por confirmar
+							<div class="mt-2">
+								📍 Lugar: Por confirmar <br />
+								🗓 Fecha: Por confirmar
+							</div>
+						</div>
+					</div>
+
+					<div class="w-full lg:w-1/3 px-4 mt-6 lg:mt-0">
+						<div class="Label">Código de conducta</div>
+						<div class="mt-4">
+							Como organización nos comprometemos a proporcionar un ambiente
+							seguro y amigable. Un entorno para que todos puedan aprender,
+							conocer y disfrutar el evento. Todos asistentes, competidores y
+							patrocinadores deben seguir nuestro código
+							<a
+								target="_blank"
+								class="text-green-400"
+								href="https://github.com/devschile/codeinthedark2018/blob/master/codeofconduct.md"
+								>código de conducta</a
+							>.
+						</div>
+					</div>
+
+					<div class="w-full lg:w-1/3 lg:text-center px-4 mt-6 lg:mt-0">
+						<div class="Label">Organiza</div>
+
+						<div class="mt-4">
+							<a target="_blank" href="https://valdivia.beerjs.cl">
+								<img
+									src="/dist/images/lgo-beerjs-valdivia.png"
+									alt="beerjs-valdivia"
+									class="w-16 lg:inline-block"
+								/>
+								<div class="text-xs mt-2">
+									BeerJS Valdivia <br />
+									Una comunidad de desarrolladores abierta y gratuita que
+									fomenta espacios sociales alrededor del software.
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
+			</div>
 
-				<div class="w-full lg:w-1/3 px-4 mt-6 lg:mt-0">
-					<div class="Label">Código de conducta</div>
-					<div class="mt-4">
-						Como organización nos comprometemos a proporcionar un ambiente
-						seguro y amigable. Un entorno para que todos puedan aprender,
-						conocer y disfrutar el evento. Todos asistentes, competidores y
-						patrocinadores deben seguir nuestro código
-						<a
-							target="_blank"
-							class="text-green-400"
-							href="https://github.com/devschile/codeinthedark2018/blob/master/codeofconduct.md"
-							>código de conducta</a
-						>.
-					</div>
-				</div>
-
-				<div class="w-full lg:w-1/3 lg:text-center px-4 mt-6 lg:mt-0">
-					<div class="Label">Organiza</div>
-
-					<div class="mt-4">
-						<a target="_blank" href="https://valdivia.beerjs.cl">
-							<img
-								src="/dist/images/lgo-beerjs-valdivia.png"
-								alt="beerjs-valdivia"
-								class="w-20 lg:inline-block"
-							/>
-							<div class="text-xs mt-2 lg:px-20">
-								BeerJS Valdivia <br />
-								Una comunidad de desarrolladores abierta y gratuita que fomenta
-								espacios sociales alrededor del software.
-							</div>
-						</a>
-					</div>
-				</div>
+			<div class="Follow text-center text-xs p-4 opacity-75">
+				<div class="mb-2">Síguenos en nuestras redes sociales</div>
+				<a href="#">
+					<svg width="24" height="24" viewBox="0 0 24 24" class="inline-block">
+						<path
+							d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+						/>
+					</svg>
+				</a>
+				<a href="">
+					<svg width="24" height="24" viewBox="0 0 24 24" class="inline-block">
+						<path
+							d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+						/>
+					</svg>
+				</a>
 			</div>
 		</div>
 
+		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+		<script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
+		<script src="https://player.vimeo.com/api/player.js"></script>
+		<script src="dist/js/main.min.js"></script>
 		<script>
 			var el = document.querySelector('html').classList
 			setTimeout(function() {
@@ -338,8 +389,5 @@
 				el.add('init-1')
 			}, 500)
 		</script>
-		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-		<script src="https://player.vimeo.com/api/player.js"></script>
-		<script src="dist/js/main.min.js"></script>
 	</body>
 </html>

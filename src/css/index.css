@@ -38,20 +38,29 @@ h3 {
 	animation: 12s 3s linear infinite flash-bg-anim;
 }
 
-.Hero-bg-noise {
-	background-image: url(https://media2.giphy.com/media/FSqYDfsdaiG9W/giphy.gif?cid=790b76115d6c365c124d4e1292059f809ada9e05bf43e442&rid=giphy.gif);
+.Bg-noise {
+	background-image: url(/dist/images/img-noise.gif);
 	background-repeat: repeat;
-	background-size: 220px;
+	background-size: 90px;
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	opacity: 0.1;
+	opacity: 0.07;
+	z-index: 1;
+	pointer-events: none;
+	display: none;
+}
+
+@media (min-width: 640px) {
+	.Bg-noise {
+		display: block;
+	}
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-	.Hero-bg-noise {
+	.Bg-noise {
 		opacity: 0.06;
 	}
 }
@@ -94,6 +103,11 @@ h3 {
 	display: block;
 }
 
+.Hero-message h3:nth-child(1) {
+	letter-spacing: 1px;
+	text-shadow: 1px 1px #090b0e;
+}
+
 .Button {
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -115,7 +129,6 @@ h3 {
 
 @media (min-width: 1024px) {
 	.Button {
-		/* padding: 1em 2em; */
 		font-size: 1rem;
 	}
 }
@@ -133,6 +146,24 @@ h3 {
 	font-weight: bold;
 }
 
+.LabelSpecial {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px #090b0e;
+}
+
+.LabelSpecial:before {
+	content: '';
+	border-bottom: 10px solid #1fb27a;
+	position: absolute;
+	bottom: -1px;
+	left: -4px;
+	right: -2px;
+	z-index: -1;
+}
+
 .What {
 	position: relative;
 }
@@ -148,6 +179,13 @@ h3 {
 	top: 0;
 	left: 0;
 	z-index: 0;
+	display: none;
+}
+
+@media (min-width: 640px) {
+	.What-bg {
+		display: block;
+	}
 }
 
 .What-body {
@@ -173,11 +211,13 @@ h3 {
 	opacity: 0.9;
 }
 
-.Socialbar a:hover svg {
+.Socialbar a:hover svg,
+.Follow a:hover svg {
 	fill: #07ce8a;
 }
 
-.Socialbar svg {
+.Socialbar svg,
+.Follow svg {
 	width: 2rem;
 	fill: #fff;
 }
@@ -193,7 +233,7 @@ h3 {
 }
 
 .Superbg {
-	background-image: url(https://media1.giphy.com/media/nizkfSsoo0Rb2/giphy.gif?cid=790b7611f4164664f9a0ec6231507df6a213f6311972bd44&rid=giphy.gif);
+	background-image: url(/dist/images/img-pixelnoise.gif);
 	background-size: 400px;
 	width: 100%;
 	height: 100vh;
@@ -211,41 +251,47 @@ h3 {
 		opacity: 0;
 	}
 	30% {
-		opacity: 0.08;
+		opacity: 0.09;
 	}
 	40% {
 		opacity: 0;
 	}
 	50% {
-		opacity: 0.06;
+		opacity: 0.08;
 	}
 	60% {
 		opacity: 0;
 	}
 	100% {
-		opacity: 0.02;
+		opacity: 0.04;
 	}
 }
 
 .Video-backdrop {
-	width: 100vw;
-	height: 200px;
-	background-image: url(/dist/images/img-backdrop-video.jpg);
-	background-size: cover;
-	background-position: 50%;
+	max-width: 800px;
+	width: 80%;
+	height: auto;
+	height: 100%;
 }
 
-@media (min-width: 640px) {
-	.Video-backdrop {
-		height: 300px;
-	}
+.Video-inner iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
-@media (min-width: 1024px) {
-	.Video-backdrop {
-		width: 900px;
-		height: 506px;
-	}
+.container {
+	display: none;
+}
+
+.is-loaded .container {
+	display: block;
+}
+
+.is-loaded .Loading {
+	display: none;
 }
 
 .absolute-center {
