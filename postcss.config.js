@@ -1,6 +1,6 @@
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['index.html'],
-  whitelist: ['is-over'],
+  whitelist: ['is-over', 'is-loaded', 'iframe'],
   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
 })
 
