@@ -4,6 +4,7 @@
   const doc = document.documentElement
   const body = document.querySelector('body')
   const button = document.querySelector('.Hero .Button')
+  const buttonMore = document.querySelector('.Button--more')
   const videoPlayerBack = document.querySelector('.Video-backdrop')
   const hero = document.querySelector('.Hero')
 
@@ -38,7 +39,10 @@
       })
       sr.reveal('.Video', { ...slide, delay: 1000 })
       sr.reveal('.What', slide)
+      sr.reveal('.Mail', slide)
+      sr.reveal('.Support', slide)
       sr.reveal('.Footer', { ...slide, origin: 'bottom' })
+      sr.reveal('.Follow', { ...slide, origin: 'bottom' })
       sr.reveal('.Socialbar', { ...slide, delay: 2000 })
 
       const gridNodeList = document.querySelectorAll('.flex .item')
@@ -67,5 +71,23 @@
 
     const player = new Vimeo.Player('video', options)
     setTimeout(() => player.play(), 100)
+  })
+
+  // Handle scroll position
+  window.onscroll = function () {
+    var d = document.documentElement
+    var offset = d.scrollTop
+    var targetHeight = hero.offsetHeight
+
+    if (offset >= targetHeight) {
+      body.classList.add('is-scrollHero')
+    } else {
+      body.classList.remove('is-scrollHero')
+    }
+  }
+
+  // More description
+  buttonMore.addEventListener('click', function () {
+    body.classList.toggle('is-moreExpanded')
   })
 })()

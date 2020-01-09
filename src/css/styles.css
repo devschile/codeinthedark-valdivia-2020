@@ -108,6 +108,17 @@ h3 {
 	text-shadow: 1px 1px #090b0e;
 }
 
+.ButtonEmail {
+	margin-left: -44px;
+	vertical-align: -6px;
+	opacity: 0.8;
+}
+
+.ButtonEmail svg {
+	fill: #1eb27b;
+	width: 20px;
+}
+
 .Button {
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -118,6 +129,7 @@ h3 {
 	color: #fff;
 	font-weight: bold;
 	font-size: 0.8rem;
+	background-color: transparent;
 }
 
 @media (min-width: 640px) {
@@ -131,6 +143,16 @@ h3 {
 	.Button {
 		font-size: 1rem;
 	}
+}
+
+.Button--sm {
+	font-size: 0.8rem;
+	padding: 0.4em 1em;
+}
+
+.Button--md {
+	font-size: 0.9rem;
+	padding: 0.74em 1.2em;
 }
 
 .Button:hover {
@@ -152,6 +174,7 @@ h3 {
 	display: inline-block;
 	letter-spacing: 2px;
 	text-shadow: 1px 1px #090b0e;
+	line-height: 1;
 }
 
 .LabelSpecial:before {
@@ -166,6 +189,23 @@ h3 {
 
 .What {
 	position: relative;
+}
+
+.What-more {
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+}
+
+.is-moreExpanded .What-more {
+	max-height: 100%;
+	overflow: auto;
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+.What-more svg {
+	width: 10em;
 }
 
 .What-bg {
@@ -292,6 +332,15 @@ h3 {
 
 .is-loaded .Loading {
 	display: none;
+}
+
+.Bar {
+	transition: all 0.6s ease;
+	transform: translateY(-100%);
+}
+
+.is-scrollHero .Bar {
+	transform: translateY(0);
 }
 
 .absolute-center {
