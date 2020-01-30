@@ -1,20 +1,14 @@
-const purgecss = require('@fullhuman/postcss-purgecss')({
-  content: ['index.html'],
-  whitelist: [
-    'iframe',
-    'is-over',
-    'is-loaded',
-    'is-scrollHero',
-    'is-moreExpanded'
-  ],
-  defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
-})
+const pluginsProd = [
+  require('postcss-uncss')({
+    html: ['index.html']
+  }),
+  require('autoprefixer'),
+  require('cssnano')
+]
 
 module.exports = {
   plugins: [
     require('tailwindcss'),
-    ...(process.env.NODE_ENV === 'production'
-      ? [require('autoprefixer'), require('cssnano'), purgecss]
-      : [])
+    ...(process.env.NODE_ENV === 'production' ? pluginsProd : [])
   ]
 }
