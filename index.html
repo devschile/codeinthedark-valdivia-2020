@@ -8,13 +8,13 @@
 		<title>Code in the Dark . Valdivia . 2020</title>
 		<meta
 			name="description"
-			content="La fiesta para developers más intensa del año en Valdivia"
+			content="Competencia de código en vivo para developers"
 		/>
 
 		<meta property="og:title" content="Code in the Dark Valdivia, Chile" />
 		<meta
 			property="og:description"
-			content="Desafíos de código para frontend y backend en una fiesta hecha por desarrolladores para desarrolladores."
+			content="Competencia de código en vivo para developers"
 		/>
 		<meta property="og:image" content="/dist/images/img-codeinthedark.jpg" />
 		<meta name="twitter:card" content="summary_large_image" />
@@ -22,7 +22,7 @@
 		<meta name="twitter:title" content="Code in the Dark Valdivia, Chile" />
 		<meta
 			name="twitter:description"
-			content="Desafíos de código para frontend y backend en una fiesta hecha por desarrolladores para desarrolladores."
+			content="Competencia de código en vivo para developers"
 		/>
 		<meta name="twitter:image" content="/dist/images/img-codeinthedark.jpg" />
 		<meta name="twitter:image:alt" content="Code in the Dark Valdivia, Chile" />
@@ -96,12 +96,12 @@
 		</noscript>
 
 		<div class="Loading w-screen h-screen">
-			<div class="LabelSpecial absolute-center">Cargando...</div>
+			<div class="LabelSpecial absolute-center">C4rg4nd0...</div>
 		</div>
 
 		<div class="Superbg"></div>
 
-		<div class="container p-5 md:p-8 mx-auto relative">
+		<div class="container px-5 md:px-8 mx-auto relative">
 			<div class="Socialbar invisible hidden lg:block">
 				<svg width="24" height="24">
 					<path
@@ -110,14 +110,24 @@
 				</svg>
 
 				<div class="Socialbar-line"></div>
-				<a href="#" aria-label="Twitter">
+				<a
+					href="https://twitter.com/codeinthedarkvl"
+					target="_blank"
+					rel="noopener"
+					aria-label="Twitter"
+				>
 					<svg width="24" height="24">
 						<path
 							d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
 						/>
 					</svg>
 				</a>
-				<a href="#" aria-label="Instagram">
+				<a
+					href="https://www.instagram.com/codeinthedark_valdivia"
+					target="_blank"
+					rel="noopener"
+					aria-label="Instagram"
+				>
 					<svg width="24" height="24">
 						<path
 							d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
@@ -126,24 +136,26 @@
 				</a>
 			</div>
 
-			<div class="Bar bg-gray-900 fixed top-0 left-0 right-0 z-10">
+			<div
+				class="Bar bg-gray-900 fixed top-0 left-0 right-0 z-10 hidden lg:block"
+			>
 				<div class="py-2 px-4 text-right flex justify-center">
 					<div class="LabelSpecial self-center mr-6 text-sm">
 						Code in the Dark . Valdivia . 2020
 					</div>
-					<button class="Button Button--sm cursor-not-allowed opacity-75">
-						<span>Comprar</span>
-					</button>
+					<!-- <button class="Button Button--sm cursor-not-allowed opacity-75">
+						<span>Regístrate</span>
+					</button> -->
 				</div>
 			</div>
 
-			<div class="Hero lg:py-10 lg:mt-2 invisible">
+			<div class="Hero lg:py-10 mt-4 md:mt-6 lg:mt-16 invisible">
 				<div class="Hero-bg"></div>
 				<div class="Bg-noise"></div>
 				<div class="Hero-body text-center py-10 px-8 relative">
 					<div class="Hero-image">
 						<img
-							class="inline-block w-3/4 md:w-1/2 lg:w-2/6"
+							class="inline-block w-3/4 md:w-2/4 lg:w-2/6"
 							src="/dist/images/lgo-citdv-logo.png"
 							alt="codeinthedark-logo"
 						/>
@@ -151,17 +163,43 @@
 					</div>
 					<div class="Hero-message mt-4">
 						<h3>
-							La fiesta para developers más intensa del año.
+							Competencia de código en vivo para developers.
 						</h3>
-						<h3 class="opacity-75 text-sm lg:text-base">
-							Música, comida, tragos y desafíos de código.
-						</h3>
+						<h4 class="opacity-75 text-sm lg:text-base mt-2 break-words">
+							_f1esta_mus1ca_y_desaf1os_de_c0digo.mkv
+						</h4>
 					</div>
-					<div class="Hero-ticket mt-6 z-10 relative">
-						<button class="Button cursor-not-allowed opacity-75">
-							<span>Comprar ticket</span>
+					<div class="Hero-ticket mt-4 lg:mt-6 z-10 relative">
+						<div class="Button cursor-not-allowed opacity-75">
+							<span>Regístrate</span>
 							<span>Proximamente</span>
-						</button>
+						</div>
+					</div>
+					<div class="SocialMobile mt-6 lg:hidden">
+						<a
+							href="https://twitter.com/codeinthedarkvl"
+							target="_blank"
+							rel="noopener"
+							aria-label="Twitter"
+						>
+							<svg width="24" height="24">
+								<path
+									d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+								/>
+							</svg>
+						</a>
+						<a
+							href="https://www.instagram.com/codeinthedark_valdivia"
+							target="_blank"
+							rel="noopener"
+							aria-label="Instagram"
+						>
+							<svg width="24" height="24">
+								<path
+									d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+								/>
+							</svg>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -226,8 +264,8 @@
 							<h3 class="mt-4 text-gray-500">Todos son bienvenidos</h3>
 							<p class="mt-1 text-gray-600 text-sm">
 								No tienes que competir para divertirte en Code in the Dark. Cada
-								miembros de la audiencia puede apoyar a su favorito y ser parte
-								de esta gran fiesta del código.
+								miembro de la audiencia puede apoyar a su favorito y ser parte
+								de esta gran fiesta.
 							</p>
 						</div>
 					</div>
@@ -271,20 +309,24 @@
 
 					<div class="mt-4">
 						<div class="text-center">
-							En esta edición de Code in the Dark Valdivia tendremos desafíos
-							para frontend y backend.
-							<div class="Button Button--sm mt-4 Button--more">Conocer más</div>
+							En esta edición de Code in the Dark Valdivia habrán desafíos del
+							tipo frontend y backend.
+							<div class="block">
+								<div class="Button Button--sm mt-4 Button--more">
+									Conocer más
+								</div>
+							</div>
 						</div>
 						<div class="What-more text-gray-500">
-							<div class="flex">
-								<p class="w-1/2 mt-4 text-left p-6">
+							<div class="flex flex-wrap">
+								<p class="md:w-1/2 mt-4 text-left md:p-6">
 									Para el desafío
 									<b class="text-red-500 font-bold uppercase">frontend</b> cada
 									participante recibe una captura de pantalla y una serie de
 									instrucciones. Construyen el diseño proporcionado usando sólo
 									HTML y CSS puro.
 								</p>
-								<p class="w-1/2 mt-4 text-gray-500 text-left p-6">
+								<p class="md:w-1/2 mt-4 text-gray-500 text-left md:p-6">
 									En el caso del desafío
 									<b class="text-red-500 font-bold uppercase">backend</b> los
 									participantes deben solucionar algún problema acotado con un
@@ -292,9 +334,9 @@
 									datos, realizar búsquedas, mapear, etc.
 								</p>
 							</div>
-							<div class="px-6">
+							<div class="mt-4 md:px-6 text-gray-600">
 								Se proporcionarán todos los assets e instrucciones necesarias.
-								No se pueden usar frameworks, librerias o recursos externos. Las
+								No se pueden usar frameworks, librerías o recursos externos. Las
 								vistas previas de los resultados no están permitidas durante la
 								competencia. Una vez que se agota el tiempo de 15 minutos cada
 								participante presenta su resultado a la audiencia, la cual es la
@@ -492,8 +534,8 @@
 								/>
 								<div class="text-xs mt-2">
 									BeerJS Valdivia <br />
-									Una comunidad de desarrolladores abierta y gratuita que
-									fomenta espacios sociales alrededor del software.
+									Comunidad para desarrolladores abierta que fomenta espacios
+									sociales alrededor del software.
 								</div>
 							</a>
 						</div>
@@ -501,16 +543,26 @@
 				</div>
 			</div>
 
-			<div class="Follow text-xs pt-4 text-center">
+			<div class="Follow text-xs pt-4 pb-8 text-center">
 				<div class="mb-2">Síguenos en nuestras redes sociales</div>
-				<a href="#" aria-label="Twitter">
+				<a
+					href="https://twitter.com/codeinthedarkvl"
+					target="_blank"
+					rel="noopener"
+					aria-label="Twitter"
+				>
 					<svg width="24" height="24" viewBox="0 0 24 24" class="inline-block">
 						<path
 							d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
 						/>
 					</svg>
 				</a>
-				<a href="#" aria-label="Instagram">
+				<a
+					href="https://www.instagram.com/codeinthedark_valdivia"
+					target="_blank"
+					rel="noopener"
+					aria-label="Instagram"
+				>
 					<svg width="24" height="24" viewBox="0 0 24 24" class="inline-block">
 						<path
 							d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"

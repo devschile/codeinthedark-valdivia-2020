@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 
+/* uncss:ignore start */
 body {
 	background-color: #090b0e;
 	font-family: 'Roboto Mono';
@@ -62,27 +63,6 @@ h3 {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 	.Bg-noise {
 		opacity: 0.06;
-	}
-}
-
-@keyframes flash-anim {
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes opacity-anim {
-	to {
-		opacity: 0.1;
-	}
-}
-
-@keyframes opacity-anim-reverse {
-	to {
-		opacity: 0.4;
 	}
 }
 
@@ -272,6 +252,11 @@ h3 {
 	margin-right: 8px;
 }
 
+.SocialMobile a {
+	display: inline-block;
+	fill: #fff;
+}
+
 .Superbg {
 	background-image: url(/dist/images/img-pixelnoise.gif);
 	background-size: 400px;
@@ -284,27 +269,6 @@ h3 {
 	z-index: -1;
 	transition: opacity 1s ease;
 	animation: 10s linear infinite flash-bg-anim;
-}
-
-@keyframes flash-bg-anim {
-	10% {
-		opacity: 0;
-	}
-	30% {
-		opacity: 0.09;
-	}
-	40% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 0.08;
-	}
-	60% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0.04;
-	}
 }
 
 .Video-backdrop {
@@ -349,5 +313,48 @@ h3 {
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 }
+
+@keyframes flash-anim {
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes opacity-anim {
+	to {
+		opacity: 0.1;
+	}
+}
+
+@keyframes opacity-anim-reverse {
+	to {
+		opacity: 0.4;
+	}
+}
+
+@keyframes flash-bg-anim {
+	10% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 0.09;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.08;
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.04;
+	}
+}
+/* uncss:ignore end */
 
 @tailwind utilities;

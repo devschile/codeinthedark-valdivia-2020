@@ -13,7 +13,7 @@
   doc.classList.add('js')
 
   // Detect when images have been loaded
-  imagesLoaded('.Hero-bg', { background: true }, function (instance) {
+  imagesLoaded('.Hero-bg', { background: true }, function () {
     body.classList.add('is-loaded')
 
     // Reveal animations
@@ -37,7 +37,8 @@
         delay: 1200,
         duration: 2000
       })
-      sr.reveal('.Video', { ...slide, delay: 1000 })
+      sr.reveal('.SocialMobile', { ...slide, delay: 1400 })
+      sr.reveal('.Video', { ...slide, delay: 1500 })
       sr.reveal('.What', slide)
       sr.reveal('.Mail', slide)
       sr.reveal('.Support', slide)
