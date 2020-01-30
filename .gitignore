@@ -171,3 +171,5 @@ $RECYCLE.BIN/
 
 dist/
 sw.js
+sw.js.map
+workbox-*
