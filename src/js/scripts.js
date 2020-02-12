@@ -3,7 +3,6 @@
   // Set local elements
   const doc = document.documentElement
   const body = document.querySelector('body')
-  const button = document.querySelector('.Hero .Button')
   const buttonMore = document.querySelector('.Button--more')
   const videoPlayerBack = document.querySelector('.Video-backdrop')
   const hero = document.querySelector('.Hero')
@@ -49,14 +48,6 @@
       const gridNodeList = document.querySelectorAll('.flex .item')
       sr.reveal(gridNodeList, { ...slide, origin: 'bottom' })
     }, 200)
-  })
-
-  // Little mouseover effect
-  button.addEventListener('mouseenter', () => {
-    hero.classList.add('is-over')
-  })
-  button.addEventListener('mouseleave', () => {
-    hero.classList.remove('is-over')
   })
 
   // Replace video player
