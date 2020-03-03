@@ -290,6 +290,31 @@ h3 {
 	transform: translateY(0);
 }
 
+.Playlist {
+	transform: translateX(100%);
+	animation: anim-playlist 1s 4s forwards;
+}
+
+.Playlist img {
+	width: 22px;
+	animation: anim-playlist-icon 1s 1s infinite;
+}
+
+@keyframes anim-playlist {
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes anim-playlist-icon {
+	0% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
 .absolute-center {
 	position: absolute;
 	top: 50%;
